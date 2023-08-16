@@ -1,0 +1,475 @@
+@charset "UTF-8";
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rounded {
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes rounded1 {
+  to {
+    transform: rotateX(460deg) rotateY(460deg);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  position: absolute;
+  text-transform: capitalize;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  color: #f7cfc8;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 80px;
+  letter-spacing: 10px;
+  text-align: center;
+  text-shadow: -6px -6px #4d84c8, -5px -5px #4d84c8, -4px -4px #4d84c8, -3px -3px #4d84c8, -2px -2px #4d84c8, -1px -1px #4d84c8, 1px 1px #4d84c8, 2px 2px #4d84c8, 3px 3px #4d84c8, 4px 4px #4d84c8, 5px 5px #4d84c8, 6px 6px #4d84c8, 7px 7px #4d84c8, 8px 8px #4d84c8, 9px 9px #4d84c8, 10px 10px #4d84c8, 11px 11px #4d84c8, 12px 12px #4d84c8, 13px 13px #4d84c8, 14px 14px #4d84c8, 15px 15px #4d84c8, 16px 16px #4d84c8, 17px 17px #4d84c8, 18px 18px #4d84c8, 19px 19px #4d84c8, 20px 20px #4d84c8, 21px 21px #4d84c8, 22px 22px #4d84c8, 23px 23px #4d84c8, 24px 24px #4d84c8, 25px 25px #4d84c8, 26px 26px #4d84c8, 27px 27px #4d84c8, 25px 25px #4d84c8, 28px 28px #4d84c8, 29px 29px #4d84c8, 30px 30px #4d84c8, 31px 31px #4d84c8, 32px 32px #4d84c8, 33px 33px #4d84c8, 34px 34px #4d84c8, 35px 35px #4d84c8, 36px 36px #4d84c8, 37px 37px #4d84c8, 38px 38px #4d84c8, 39px 39px #4d84c8, 40px 40px;
+  width: 100%;
+}
+
+main {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > div > ul {
+  perspective: 7000px;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rounded 17.5s 1.3s infinite linear;
+}
+main > div > ul > figure {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+main > div > ul > figure:nth-of-type(2) {
+  margin: 100px;
+  animation: rounded1 28.5s 1.3s infinite linear;
+}
+main > div > ul > figure > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rounded 7.5s 1.3s infinite linear;
+  transform-origin: bottom;
+  background-image: url(./img/169324323.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  border-radius: 20%;
+}
+main > div > ul > figure > div > * {
+  border-radius: 20%;
+}
+main > div > ul > figure > div:nth-of-type(2) {
+  transform: translateZ(120px);
+}
+main > div > ul > figure > div:nth-of-type(1) > div:nth-of-type(1) {
+  width: 120px;
+  height: 120px;
+  transform-origin: left;
+  transform: rotateY(270deg);
+  background-image: url(./img/عکس-سردار-سلیمانی-برای-پروفایل-98.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main > div > ul > figure > div:nth-of-type(1) > div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  transform-origin: right;
+  transform: rotateY(-270deg);
+  background-image: url(./img/عکس-سردار-سلیمانی-برای-پروفایل-89.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main > div > ul > figure > div:nth-of-type(1) > div:nth-of-type(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  transform-origin: bottom;
+  transform: rotateX(270deg);
+  background-image: url(./img/عکس-سردار-سلیمانی-برای-پروفایل-92.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main > div > ul > figure > div:nth-of-type(1) > div:nth-of-type(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  transform-origin: top;
+  transform: rotateX(-270deg);
+  background-image: url(./img/عکس-سردار-سلیمانی-برای-پروفایل-93.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main > div > ul > figure > div:nth-of-type(1) > div:nth-of-type(5) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  transform-origin: top;
+  transform: translateZ(120px);
+  background-image: url(./img/عکس-سردار-سلیمانی-برای-پروفایل-95.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main > div > ul > li {
+  width: 100%;
+  height: 100%;
+  border: 4px dotted black;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  opacity: 0;
+  animation: show 0.75s forwards ease-in-out;
+}
+main > div > ul > li:nth-of-type(1) {
+  transform: rotateX(1.3deg);
+  border-color: rgb(149, 108, 222);
+  animation-delay: 0.6s;
+}
+main > div > ul > li:nth-of-type(2) {
+  transform: rotateX(2.6deg);
+  border-color: rgb(37, 187, 213);
+  animation-delay: 0.1s;
+}
+main > div > ul > li:nth-of-type(3) {
+  transform: rotateX(3.9deg);
+  border-color: rgb(200, 116, 66);
+  animation-delay: 0.5s;
+}
+main > div > ul > li:nth-of-type(4) {
+  transform: rotateX(5.2deg);
+  border-color: rgb(198, 68, 145);
+  animation-delay: 1s;
+}
+main > div > ul > li:nth-of-type(5) {
+  transform: rotateX(6.5deg);
+  border-color: rgb(144, 100, 226);
+  animation-delay: 0.9s;
+}
+main > div > ul > li:nth-of-type(6) {
+  transform: rotateX(7.8deg);
+  border-color: rgb(184, 115, 185);
+  animation-delay: 0.7s;
+}
+main > div > ul > li:nth-of-type(7) {
+  transform: rotateX(9.1deg);
+  border-color: rgb(143, 98, 252);
+  animation-delay: 0.5s;
+}
+main > div > ul > li:nth-of-type(8) {
+  transform: rotateX(10.4deg);
+  border-color: rgb(221, 88, 46);
+  animation-delay: 1s;
+}
+main > div > ul > li:nth-of-type(9) {
+  transform: rotateX(11.7deg);
+  border-color: rgb(180, 83, 202);
+  animation-delay: 0.4s;
+}
+main > div > ul > li:nth-of-type(10) {
+  transform: rotateX(13deg);
+  border-color: rgb(82, 126, 215);
+  animation-delay: 1s;
+}
+main > div > ul > li:nth-of-type(11) {
+  transform: rotateX(14.3deg);
+  border-color: rgb(120, 141, 232);
+  animation-delay: 1s;
+}
+main > div > ul > li:nth-of-type(12) {
+  transform: rotateX(15.6deg);
+  border-color: rgb(122, 172, 29);
+  animation-delay: 0.4s;
+}
+main > div > ul > li:nth-of-type(13) {
+  transform: rotateX(16.9deg);
+  border-color: rgb(57, 10, 182);
+  animation-delay: 0.7s;
+}
+main > div > ul > li:nth-of-type(14) {
+  transform: rotateX(18.2deg);
+  border-color: rgb(6, 200, 28);
+  animation-delay: 0.2s;
+}
+main > div > ul > li:nth-of-type(15) {
+  transform: rotateX(19.5deg);
+  border-color: rgb(219, 65, 49);
+  animation-delay: 0.1s;
+}
+main > div > ul > li:nth-of-type(16) {
+  transform: rotateX(20.8deg);
+  border-color: rgb(117, 194, 24);
+  animation-delay: 0.8s;
+}
+main > div > ul > li:nth-of-type(17) {
+  transform: rotateX(22.1deg);
+  border-color: rgb(104, 124, 11);
+  animation-delay: 0.8s;
+}
+main > div > ul > li:nth-of-type(18) {
+  transform: rotateX(23.4deg);
+  border-color: rgb(105, 196, 219);
+  animation-delay: 0.3s;
+}
+main > div > ul > li:nth-of-type(19) {
+  transform: rotateX(24.7deg);
+  border-color: rgb(88, 241, 27);
+  animation-delay: 0.1s;
+}
+main > div > ul > li:nth-of-type(20) {
+  transform: rotateX(26deg);
+  border-color: rgb(210, 142, 16);
+  animation-delay: 1s;
+}
+main > div > ul > li:nth-of-type(21) {
+  transform: rotateX(27.3deg);
+  border-color: rgb(11, 184, 112);
+  animation-delay: 0.5s;
+}
+main > div > ul > li:nth-of-type(22) {
+  transform: rotateX(28.6deg);
+  border-color: rgb(249, 69, 145);
+  animation-delay: 0.3s;
+}
+main > div > ul > li:nth-of-type(23) {
+  transform: rotateX(29.9deg);
+  border-color: rgb(228, 233, 58);
+  animation-delay: 0.3s;
+}
+main > div > ul > li:nth-of-type(24) {
+  transform: rotateX(31.2deg);
+  border-color: rgb(99, 109, 161);
+  animation-delay: 0.4s;
+}
+main > div > ul > li:nth-of-type(25) {
+  transform: rotateX(32.5deg);
+  border-color: rgb(141, 59, 111);
+  animation-delay: 0.8s;
+}
+main > div > ul > li:nth-of-type(26) {
+  transform: rotateX(33.8deg);
+  border-color: rgb(105, 180, 99);
+  animation-delay: 0.2s;
+}
+main > div > ul > li:nth-of-type(27) {
+  transform: rotateX(35.1deg);
+  border-color: rgb(43, 123, 35);
+  animation-delay: 0.1s;
+}
+main > div > ul > li:nth-of-type(28) {
+  transform: rotateX(36.4deg);
+  border-color: rgb(37, 240, 227);
+  animation-delay: 0.1s;
+}
+main > div > ul > li:nth-of-type(29) {
+  transform: rotateX(37.7deg);
+  border-color: rgb(227, 26, 158);
+  animation-delay: 0.7s;
+}
+main > div > ul > li:nth-of-type(30) {
+  transform: rotateX(39deg);
+  border-color: rgb(90, 123, 103);
+  animation-delay: 1s;
+}
+main > div > ul > li:nth-of-type(31) {
+  transform: rotateX(40.3deg);
+  border-color: rgb(137, 115, 147);
+  animation-delay: 0.3s;
+}
+main > div > ul > li:nth-of-type(32) {
+  transform: rotateX(41.6deg);
+  border-color: rgb(168, 103, 198);
+  animation-delay: 0.7s;
+}
+main > div > ul > li:nth-of-type(33) {
+  transform: rotateX(42.9deg);
+  border-color: rgb(6, 92, 149);
+  animation-delay: 1s;
+}
+main > div > ul > li:nth-of-type(34) {
+  transform: rotateX(44.2deg);
+  border-color: rgb(220, 96, 34);
+  animation-delay: 0.4s;
+}
+main > div > ul > li:nth-of-type(35) {
+  transform: rotateX(45.5deg);
+  border-color: rgb(209, 89, 44);
+  animation-delay: 0.5s;
+}
+main > div > ul > li:nth-of-type(36) {
+  transform: rotateX(46.8deg);
+  border-color: rgb(146, 116, 84);
+  animation-delay: 0.9s;
+}
+main > div > ul > li:nth-of-type(37) {
+  transform: rotateX(48.1deg);
+  border-color: rgb(58, 155, 122);
+  animation-delay: 1s;
+}
+main > div > ul > li:nth-of-type(38) {
+  transform: rotateX(49.4deg);
+  border-color: rgb(186, 123, 163);
+  animation-delay: 0.3s;
+}
+main > div > ul > li:nth-of-type(39) {
+  transform: rotateX(50.7deg);
+  border-color: rgb(57, 74, 30);
+  animation-delay: 0.4s;
+}
+main > div > ul > li:nth-of-type(40) {
+  transform: rotateX(52deg);
+  border-color: rgb(195, 186, 27);
+  animation-delay: 0.6s;
+}
+main > div > ul > li:nth-of-type(41) {
+  transform: rotateX(53.3deg);
+  border-color: rgb(110, 161, 38);
+  animation-delay: 0.6s;
+}
+main > div > ul > li:nth-of-type(42) {
+  transform: rotateX(54.6deg);
+  border-color: rgb(248, 34, 105);
+  animation-delay: 0.5s;
+}
+main > div > ul > li:nth-of-type(43) {
+  transform: rotateX(55.9deg);
+  border-color: rgb(35, 234, 127);
+  animation-delay: 0.3s;
+}
+main > div > ul > li:nth-of-type(44) {
+  transform: rotateX(57.2deg);
+  border-color: rgb(29, 132, 199);
+  animation-delay: 0.6s;
+}
+main > div > ul > li:nth-of-type(45) {
+  transform: rotateX(58.5deg);
+  border-color: rgb(154, 157, 178);
+  animation-delay: 0.8s;
+}
+main > div > ul > li:nth-of-type(46) {
+  transform: rotateX(59.8deg);
+  border-color: rgb(56, 10, 242);
+  animation-delay: 0.1s;
+}
+main > div > ul > li:nth-of-type(47) {
+  transform: rotateX(61.1deg);
+  border-color: rgb(187, 171, 95);
+  animation-delay: 0.4s;
+}
+main > div > ul > li:nth-of-type(48) {
+  transform: rotateX(62.4deg);
+  border-color: rgb(210, 95, 233);
+  animation-delay: 0.4s;
+}
+main > div > ul > li:nth-of-type(49) {
+  transform: rotateX(63.7deg);
+  border-color: rgb(97, 117, 76);
+  animation-delay: 0.2s;
+}
+main > div > ul > li:nth-of-type(50) {
+  transform: rotateX(65deg);
+  border-color: rgb(47, 154, 90);
+  animation-delay: 0.1s;
+}
+main > div > ul > li:nth-of-type(51) {
+  transform: rotateX(66.3deg);
+  border-color: rgb(164, 126, 250);
+  animation-delay: 0.6s;
+}
+main > div > ul > li:nth-of-type(52) {
+  transform: rotateX(67.6deg);
+  border-color: rgb(94, 207, 233);
+  animation-delay: 0.1s;
+}
+main > div > ul > li:nth-of-type(53) {
+  transform: rotateX(68.9deg);
+  border-color: rgb(34, 50, 126);
+  animation-delay: 0.6s;
+}
+main > div > ul > li:nth-of-type(54) {
+  transform: rotateX(70.2deg);
+  border-color: rgb(162, 63, 41);
+  animation-delay: 1s;
+}
+main > div > ul > li:nth-of-type(55) {
+  transform: rotateX(71.5deg);
+  border-color: rgb(177, 28, 229);
+  animation-delay: 0.5s;
+}
+main > div > ul > li:nth-of-type(56) {
+  transform: rotateX(72.8deg);
+  border-color: rgb(186, 39, 113);
+  animation-delay: 0.9s;
+}
+main > div > ul > li:nth-of-type(57) {
+  transform: rotateX(74.1deg);
+  border-color: rgb(217, 70, 24);
+  animation-delay: 0.3s;
+}
+main > div > ul > li:nth-of-type(58) {
+  transform: rotateX(75.4deg);
+  border-color: rgb(92, 133, 114);
+  animation-delay: 0.7s;
+}
+main > div > ul > li:nth-of-type(59) {
+  transform: rotateX(76.7deg);
+  border-color: rgb(211, 160, 193);
+  animation-delay: 0.8s;
+}
+main > div > ul > li:nth-of-type(60) {
+  transform: rotateX(78deg);
+  border-color: rgb(81, 243, 193);
+  animation-delay: 0.5s;
+}
+main > div > ul > li:nth-of-type(61) {
+  transform: rotateX(79.3deg);
+  border-color: rgb(239, 232, 111);
+  animation-delay: 0.5s;
+}
+main > div > ul > li:nth-of-type(62) {
+  transform: rotateX(80.6deg);
+  border-color: rgb(80, 164, 100);
+  animation-delay: 0.2s;
+}
+main > div > ul > li:nth-of-type(63) {
+  transform: rotateX(81.9deg);
+  border-color: rgb(206, 55, 212);
+  animation-delay: 0.1s;
+}
+main > div > ul > li:nth-of-type(64) {
+  transform: rotateX(83.2deg);
+  border-color: rgb(109, 26, 223);
+  animation-delay: 0.4s;
+}/*# sourceMappingURL=style.css.map */
